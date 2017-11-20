@@ -1,7 +1,7 @@
 <template>
-    <div id="settings">
+    <div id="about">
       <div class="container">
-        <h1>Device Settings</h1>
+        <h1>About</h1>
       </div>
     </div>
 </template>
