@@ -1,0 +1,110 @@
+:root {
+  --light-grey: #C4C4C4;
+  --medium-grey: #878787;
+  --dark-grey: #292A2B;
+}
+
+
+
+body {
+  background-color: #292A2B;
+}
+
+h1 {
+ color: #C4C4C4;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+li {
+  color: #C4C4C4;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+nav {
+  background-color: #090909b0;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.abs
+  {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    z-index: 0;
+  }
+  .nav-item
+  {
+    z-index: 1;
+  }
+}
+
+.device-buttons {
+  justify-content: center;
+}
+
+.device-buttons button {
+  background-color: #878787;
+  color: #C4C4C4;
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  margin: 0 0.2em 0 0.2em;
+  border: none;
+}
+
+button:focus {
+  border-color: #186DFF;
+}
+
+.btn {
+  background-color: #878787;
+  color: #C4C4C4;
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  margin: 0 0.2em 0 0.2em;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #186DFF;
+  color: #C4C4C4;
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  margin: 0 0.2em 0 0.2em;
+  border: none;
+}
+
+.btn-primary:active {
+  background-color: #186DFF;
+  color: white;
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  margin: 0 0.2em 0 0.2em;
+  border: none;
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,.5);
+}
+
+.btn-primary:not([disabled]):not(.disabled).active {
+
+  background-color: #186DFF;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,.5);
+}
+

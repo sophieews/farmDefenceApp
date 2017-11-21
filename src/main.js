@@ -8,6 +8,8 @@ import Settings from './components/Settings.vue';
 import About from './components/About.vue';
 import Profile from './components/Profile.vue';
 
+require("./assets/css/main.css");
+
 
 Vue.config.productionTip = false;
 
