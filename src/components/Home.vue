@@ -17,15 +17,14 @@
         <div v-for="device in devices" class="row" style="margin: 0em 2em">
         <!--<div class="row">-->
           <div class="col-12" style="padding-left: 3em">
-            <h3>Camera 1</h3>
+            <h3>{{ device.name }}</h3>
           </div>
           <div class="event-row">
             <ul id="events" style="margin: 0px">
               <li v-for="event in device.events" class="event-card">
               <!--<li class="event-card">-->
                 <div class="image">
-                  <!--<img v-bind:src="getSrc(event.image)">-->
-                  <img src="../assets/image.jpg">
+                  <img v-bind:src="event.image">
                   <div class="time">12:00</div>
                   <div class="date">01/01/18</div>
                 </div>
@@ -52,27 +51,27 @@ export default {
           "events": [
             {
               "name": "event1",
-              "image": "../assets/image.jpg"
+              "image": require("../assets/image.jpg")
             },
             {
               "name": "event2",
-              "image": "../assets/image1.jpg"
+              "image": require("../assets/image1.jpg")
             },
             {
               "name": "event3",
-              "image": "../assets/image2.jpg"
+              "image": require("../assets/image2.jpg")
             },
             {
               "name": "event4",
-              "image": "../assets/image3.jpg"
+              "image": require("../assets/image3.jpg")
             },
             {
               "name": "event5",
-              "image": "../assets/image4.jpg"
+              "image": require("../assets/image4.jpg")
             },
             {
               "name": "event6",
-              "image": "../assets/image5.jpg"
+              "image": require("../assets/image5.jpg")
             },
           ]
         },
@@ -81,27 +80,27 @@ export default {
           "events": [
             {
               "name": "event1",
-              "image": "../assets/image5.jpg"
+              "image": require("../assets/image5.jpg")
             },
             {
               "name": "event2",
-              "image": "../assets/image4.jpg"
+              "image": require("../assets/image4.jpg")
             },
             {
               "name": "event3",
-              "image": "../assets/image3.jpg"
+              "image": require("../assets/image3.jpg")
             },
             {
               "name": "event4",
-              "image": "../assets/image2.jpg"
+              "image": require("../assets/image2.jpg")
             },
             {
               "name": "event5",
-              "image": "../assets/image1.jpg"
+              "image": require("../assets/image1.jpg")
             },
             {
               "name": "event6",
-              "image": "../assets/image.jpg"
+              "image": require("../assets/image.jpg")
             },
           ]
         }
@@ -162,10 +161,6 @@ export default {
           element.style.marginLeft = start + 'px';
         }
       }
-    },
-
-    getSrc: function(name) {
-      return require(name);
     }
   }
 
