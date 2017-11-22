@@ -3,14 +3,12 @@
       <div class="container">
         <h2>Device Name</h2>
         <div class="row">
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF"></div>
-
-        </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" style="background-color: #186DFF; padding: 10px; margin: 10px;"></div>
         </div>
       </div>
     </div>
