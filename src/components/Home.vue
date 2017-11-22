@@ -14,28 +14,21 @@
         <div v-on:click="leftClick" class="left-controls" role="button" aria-label="See Previous Modules">
           <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
         </div>
-        <!--<div v-for="device in devices" class="row" style="margin: 0em 2em">-->
-        <div class="row">
+        <div v-for="device in devices" class="row" style="margin: 0em 2em">
+        <!--<div class="row">-->
           <div class="col-12" style="padding-left: 3em">
             <h3>Camera 1</h3>
           </div>
           <div class="event-row">
             <ul id="events" style="margin: 0px">
-              <!--<li v-for="event in device.events" class="event-card">-->
-              <li class="event-card">
-                <h2>event 1</h2>
-              </li>
-              <li class="event-card">
-                <h2>event 2</h2>
-              </li>
-              <li class="event-card">
-                <h2>event 3</h2>
-              </li>
-              <li class="event-card">
-                <h2>event 4</h2>
-              </li>
-              <li class="event-card">
-                <h2>event 5</h2>
+              <li v-for="event in device.events" class="event-card">
+              <!--<li class="event-card">-->
+                <div class="image">
+                  <!--<img v-bind:src="getSrc(event.image)">-->
+                  <img src="../assets/image.jpg">
+                  <div class="time">12:00</div>
+                  <div class="date">01/01/18</div>
+                </div>
               </li>
             </ul>
           </div>
@@ -57,23 +50,59 @@ export default {
         {
           "name": "Camera 1",
           "events": [
-            {"name": "event1"},
-            {"name": "event2"},
-            {"name": "event3"},
-            {"name": "event4"},
-            {"name": "event5"},
-            {"name": "event6"},
+            {
+              "name": "event1",
+              "image": "../assets/image.jpg"
+            },
+            {
+              "name": "event2",
+              "image": "../assets/image1.jpg"
+            },
+            {
+              "name": "event3",
+              "image": "../assets/image2.jpg"
+            },
+            {
+              "name": "event4",
+              "image": "../assets/image3.jpg"
+            },
+            {
+              "name": "event5",
+              "image": "../assets/image4.jpg"
+            },
+            {
+              "name": "event6",
+              "image": "../assets/image5.jpg"
+            },
           ]
         },
         {
           "name": "Camera 2",
           "events": [
-            {"name": "event1"},
-            {"name": "event2"},
-            {"name": "event3"},
-            {"name": "event4"},
-            {"name": "event5"},
-            {"name": "event6"},
+            {
+              "name": "event1",
+              "image": "../assets/image5.jpg"
+            },
+            {
+              "name": "event2",
+              "image": "../assets/image4.jpg"
+            },
+            {
+              "name": "event3",
+              "image": "../assets/image3.jpg"
+            },
+            {
+              "name": "event4",
+              "image": "../assets/image2.jpg"
+            },
+            {
+              "name": "event5",
+              "image": "../assets/image1.jpg"
+            },
+            {
+              "name": "event6",
+              "image": "../assets/image.jpg"
+            },
           ]
         }
       ]
@@ -133,6 +162,10 @@ export default {
           element.style.marginLeft = start + 'px';
         }
       }
+    },
+
+    getSrc: function(name) {
+      return require(name);
     }
   }
 

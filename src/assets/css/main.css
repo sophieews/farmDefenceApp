@@ -32,8 +32,6 @@ a {
 
 li {
   color: #C4C4C4;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 nav {
@@ -111,18 +109,51 @@ nav {
 }
 
 .event-card {
-  width: 25em;
-  height:350px;
-  background:#fff;
+  transition: all 180ms ease-in;
+  width: 18em;
+  height:12em;
+  background-color:#676767;
   float:left;
-  margin-right:10px;
-  margin-bottom:50px;
+  margin-right:1em;
+  margin-bottom:2em;
   cursor:pointer;
-  transform: scale(1);
-  visibility:visible;
-  -moz-box-shadow: 0px 1px 5px 0px #676767;
-  -webkit-box-shadow: 0px 1px 5px 0px #676767;
-  box-shadow: 0px 1px 5px 0px #676767;
+  -moz-box-shadow: 0px 1px 5px 0px #292929;
+  -webkit-box-shadow: 0px 1px 5px 0px #292929;
+  box-shadow: 0px 1px 5px 0px #292929;
+}
+
+.event-card:hover {
+  transition: all 250ms ease-in;
+  width: 20em;
+  height:14em;
+}
+
+.event-card .image {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.event-card .image img {
+  max-height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+.time {
+  position: absolute;
+  bottom: 0.5em;
+  left: 1em;
+}
+
+.date {
+  position: absolute;
+  bottom: 0.5em;
+  right: 1em;
 }
 
 ::-webkit-scrollbar {
