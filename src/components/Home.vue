@@ -14,7 +14,7 @@
         <div v-on:click="leftClick" class="left-controls" role="button" aria-label="See Previous Modules">
           <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
         </div>
-        <div v-for="device in devices" class="row" style="margin: 0em 2em">
+        <div v-for="device in devices" class="row" style="margin: 0 2em">
         <!--<div class="row">-->
           <div class="col-12" style="padding-left: 3em">
             <h3>{{ device.name }}</h3>
